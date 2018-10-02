@@ -45,4 +45,4 @@ python manage.py runserver
 [This project is under MIT License](https://opensource.org/licenses/MIT)
 
 ## Author
-[https://github.com/pablotrinidad](Pablo Trinidad) | 2018
+[Pablo Trinidad](https://github.com/pablotrinidad) | 2018
