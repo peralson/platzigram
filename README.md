@@ -1,4 +1,20 @@
-# platzigram
+# Platzigram
+
+Create a minimal project (inspired by instagram) in Django.
+
+## Dependencies
+Python 3
+Django
+
+## Usage
+```python
+python manage.py runserver
+```
+
+## Course
+[Platzi Django Course](https://platzi.com/cursos/django/)
+
+### Course videos and progress
 
 - [Hola Mundo](https://github.com/pablotrinidad/platzigram/tree/6-Hola-Mundo)
 - [El objeto request](https://github.com/pablotrinidad/platzigram/tree/7-El-objeto-request)
@@ -24,3 +40,9 @@
 - [DetailView y ListView](https://github.com/pablotrinidad/platzigram/tree/31-DetailView-Y-ListView)
 - [CreateView, UpdateView y FormView](https://github.com/pablotrinidad/platzigram/tree/33-CrateView-FormView-UpdateView)
 - [Generic auth views](https://github.com/pablotrinidad/platzigram/tree/34-Generic-Auth-Views)
+
+## License
+[This project is under MIT License](https://opensource.org/licenses/MIT)
+
+## Author
+[https://github.com/pablotrinidad](Pablo Trinidad) | 2018
