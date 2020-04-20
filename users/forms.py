@@ -11,25 +11,15 @@ from users.models import Profile
 class SignupForm(forms.Form):
     """Sign up form."""
 
-    username = forms.CharField(min_length=4, max_length=50)
+    username = forms.CharField(label=False,min_length=4,max_length=50, widget = forms.TextInput(attrs={'placeholder':'Nombre de usuario','class': 'form-control','required': True}))
 
-    password = forms.CharField(
-        max_length=70,
-        widget=forms.PasswordInput()
-    )
-    password_confirmation = forms.CharField(
-        max_length=70,
-        widget=forms.PasswordInput()
-    )
+    password = forms.CharField(label=False,max_length=70, widget=forms.PasswordInput(attrs={'placeholder':'Escribe tu contraseña','class': 'form-control','required': True}))
+    password_confirmation = forms.CharField(label=False,max_length=70, widget=forms.PasswordInput(attrs={'placeholder':'Confirma tu contraseña','class': 'form-control','required': True}))
 
-    first_name = forms.CharField(min_length=2, max_length=50)
-    last_name = forms.CharField(min_length=2, max_length=50)
+    first_name = forms.CharField(label=False,min_length=2,max_length=50,widget = forms.TextInput(attrs={'placeholder':'Nombres','class': 'form-control','required': True}))
+    last_name = forms.CharField(label=False,min_length=2,max_length=50,widget = forms.TextInput(attrs={'placeholder':'Apellidos','class': 'form-control','required': True}))
 
-    email = forms.CharField(
-        min_length=6,
-        max_length=70,
-        widget=forms.EmailInput()
-    )
+    email = forms.EmailField(label=False,min_length=6,max_length=70,widget=forms.EmailInput(attrs={'placeholder':'Correo electrónico','class': 'form-control','required': True}))
 
     def clean_username(self):
         """Username must be unique."""
