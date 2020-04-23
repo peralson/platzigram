@@ -83,14 +83,8 @@ WSGI_APPLICATION = 'platzigram.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": 'platzigram',
-        "USER": 'peralson',
-        "PASSWORD": 'Peralson77',
-        "HOST": '5432',
-        "PORT": 'localhost',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -147,14 +141,3 @@ MEDIA_URL = '/media/'
 LOGIN_URL = '/users/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = LOGIN_URL
-
-
-ATOMIC_REQUESTS=True
-
-DEBUG = False
-
-ALLOWED_HOSTS = ['platzigram.clapfy.es']
-
-STATIC_ROOT = 'staticfiles'
-
-MEDIA_URL = '/'
